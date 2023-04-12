@@ -1,9 +1,13 @@
-year    = "2018"
-channel = "muon"
+#!/usr/bin/env python
 
-#path to the python code
-path_MLDIR = "/nfs/dust/cms/user/jabuschh/UHH/CMSSW_10_2_17/src/UHH2/MLCorner/InputsPreparation/UHH2toNumpy"
-#path to UHH2 output, used as input for convertion
-fullsel_path = "/nfs/dust/cms/user/jabuschh/NonResonantTTbar/RunII_102X_v2/" + year + "/Analysis/" + channel
-#path to store converted numpy files
-outpath = "/nfs/dust/cms/user/jabuschh/NonResonantTTbar/RunII_102X_v2/" + year + "/Analysis/" + channel + "/MLinputs_numpy_DNN"
+year = "UL17"
+channel = "muon" # electron / muon
+
+# path to the python code
+path_MLDIR = "/nfs/dust/cms/user/jabuschh/uhh2-106X_v2/CMSSW_10_6_28/src/UHH2/MLCorner/InputsPreparation/UHH2toNumpy/"
+
+# path to UHH2 output, used as input for convertion
+fullsel_path = "/nfs/dust/cms/group/zprime-uhh/Analysis_" + year + "/" + channel + "/"
+
+# path to store converted numpy files
+outpath = "/nfs/dust/cms/user/jabuschh/uhh2-106X_v2/CMSSW_10_6_28/src/UHH2/MLCorner/output/" + year + "/" + channel + "/"

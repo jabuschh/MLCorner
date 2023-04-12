@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import sys
 import subprocess
@@ -12,6 +14,7 @@ from multiprocessing import Process
 from multiprocessing import Pool
 
 def readout_to_numpy_arrays(infilename, treename, outpath, outname, unwanted_tags, unwanted_exact_tags):
+    print(infilename)
     infile = ROOT.TFile.Open(infilename)
 
     myoutpath = outpath
